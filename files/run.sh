@@ -19,6 +19,9 @@ fn_checkupdates () {
                    fi
 }
 
+fn_setvars () {
+}
+
 fn_startserver () {
                   echo "==> Starting Ark Server"
                   $START_SERVER $PARAMS
