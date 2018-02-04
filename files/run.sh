@@ -19,6 +19,13 @@ fn_checkupdates () {
                    fi
 }
 
+fn_setvars () {
+	      if [ -z $PORT ]
+		 then
+                     PORT=27015
+	      fi
+}
+
 fn_startserver () {
                   echo "==> Starting Ark Server"
                   $START_SERVER $PARAMS
@@ -31,5 +38,8 @@ fn_startserver () {
 fi
 }
 
+
+
 fn_checkupdates
+fn_setvars
 fn_startserver
